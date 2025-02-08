@@ -1,74 +1,66 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #ffffff;
-    text-align: center;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
-.container {
-    max-width: 600px;
-    margin: 20px auto;
-    background: #1e1e1e;
+header {
+    background: #333;
+    color: #fff;
     padding: 20px;
-    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
+    text-align: center;
 }
 
-.search-container, .post-container, .comment-section {
-    margin-bottom: 20px;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 12px;
-    margin: 5px 0;
-    border: 1px solid #444;
+header input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
     border-radius: 5px;
-    background: #2c2c2c;
-    color: white;
+}
+
+#post-section {
+    text-align: center;
+    margin: 20px;
+}
+
+#post-input {
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 button {
-    background: #ffffff;
-    color: #121212;
+    background: #28a745;
+    color: white;
+    padding: 10px 20px;
     border: none;
-    padding: 12px;
     cursor: pointer;
+    margin-top: 10px;
     border-radius: 5px;
-    font-weight: bold;
-    transition: 0.3s ease;
 }
 
 button:hover {
-    background: #cccccc;
-    color: #000000;
+    background: #218838;
 }
 
-.post {
-    background: #222;
-    padding: 15px;
-    margin: 10px 0;
+#posts {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: white;
     border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.1);
 }
 
-.post p {
-    font-size: 16px;
-    margin: 0;
-}
-
-.like-button {
-    background: #007BFF;
+footer {
+    background: #333;
     color: white;
-    border: none;
-    padding: 8px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: 0.3s ease;
-}
-
-.like-button:hover {
-    background: #0056b3;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
