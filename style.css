@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212; /* Warna hitam */
-    color: #ffffff; /* Warna putih */
+    background-color: #121212;
+    color: #ffffff;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -10,13 +10,13 @@ body {
 .container {
     max-width: 600px;
     margin: 20px auto;
-    background: #1e1e1e; /* Hitam keabu-abuan */
+    background: #1e1e1e;
     padding: 20px;
     box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
     border-radius: 8px;
 }
 
-.search-container, .post-container {
+.search-container, .post-container, .comment-section {
     margin-bottom: 20px;
 }
 
@@ -31,8 +31,8 @@ input, textarea {
 }
 
 button {
-    background: #ffffff; /* Warna putih */
-    color: #121212; /* Warna hitam */
+    background: #ffffff;
+    color: #121212;
     border: none;
     padding: 12px;
     cursor: pointer;
@@ -42,7 +42,7 @@ button {
 }
 
 button:hover {
-    background: #cccccc; /* Abu-abu terang */
+    background: #cccccc;
     color: #000000;
 }
 
