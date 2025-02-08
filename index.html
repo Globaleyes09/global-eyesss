@@ -5,30 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Eyes</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/9.9.0/firebase-firestore.js"></script>
+    <script defer src="app.js"></script>
 </head>
 <body>
     <header>
         <h1>Global Eyes</h1>
-        <p>Website ini mendukung kebebasan bicara dalam mengkritik politik dan beberapa kebebasan berbicara dengan anonim. Anda bisa membangkitkan lagi kasus-kasus yang sengaja dipendam oleh pemerintah.</p>
-        <p><strong>Powered by ZeRotrus/RtR0 and Afifcom32</strong></p>
-        <input type="text" id="search" placeholder="Cari postingan...">
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Cari konten...">
+            <button id="search-button">Cari</button>
+        </div>
     </header>
-    
-    <section id="post-section">
-        <textarea id="post-input" placeholder="Tulis sesuatu..."></textarea>
-        <button onclick="uploadPost()">Kirim</button>
-    </section>
-    
-    <section id="posts">
-        <!-- Postingan akan ditampilkan di sini -->
-    </section>
+
+    <main>
+        <section id="intro">
+            <p>Website ini mendukung kebebasan bicara dalam mengkritik politik dan beberapa kebebasan berbicara dengan anonim. Anda bisa membangkitkan lagi kasus-kasus yang sengaja dipendam oleh pemerintah.</p>
+            <p><strong>Disclaimer:</strong> Semua konten yang diunggah adalah tanggung jawab pengguna. Global Eyes tidak bertanggung jawab atas isi yang diunggah oleh pengunjung.</p>
+        </section>
+
+        <section id="content-posts">
+            <div id="posts-container"></div>
+        </section>
+
+        <section id="upload-section">
+            <h2>Unggah Konten</h2>
+            <textarea id="post-content" placeholder="Tulis konten anda di sini..."></textarea>
+            <button id="upload-button">Unggah</button>
+        </section>
+    </main>
 
     <footer>
-        <p>Hak Cipta &copy; 2025 Global Eyes. Semua hak dilindungi.</p>
+        <p>Powered by ZeRotrus/RtR0 and Afifcom32</p>
     </footer>
-
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>
