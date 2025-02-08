@@ -4,26 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Eyes</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Global Eyes</h1>
+        <p>Website ini mendukung kebebasan bicara dalam mengkritik politik dan beberapa kebebasan berbicara dengan anonim. Anda bisa membangkitkan lagi kasus-kasus yang sengaja dipendam oleh pemerintah.</p>
+        <p><strong>Powered by ZeRotrus/RtR0 and Afifcom32</strong></p>
         <input type="text" id="search" placeholder="Cari postingan...">
     </header>
     
-    <section id="description">
-        <p>Website ini mendukung kebebasan bicara dalam mengkritik politik dan beberapa kebebasan berbicara dengan anonymous. Anda bisa membangkitkan lagi kasus-kasus yang sengaja dipendam oleh pemerintah.</p>
-        <p class="powered">Powered by ZeRotrus/RtR0 and Afifcom32</p>
+    <section id="post-section">
+        <textarea id="post-input" placeholder="Tulis sesuatu..."></textarea>
+        <button onclick="uploadPost()">Kirim</button>
     </section>
     
-    <section id="upload">
-        <textarea id="postContent" placeholder="Tulis sesuatu..."></textarea>
-        <button onclick="uploadPost()">Upload</button>
+    <section id="posts">
+        <!-- Postingan akan ditampilkan di sini -->
     </section>
-    
-    <section id="posts"></section>
-    
+
+    <footer>
+        <p>Hak Cipta &copy; 2025 Global Eyes. Semua hak dilindungi.</p>
+    </footer>
+
     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
     <script src="script.js"></script>
