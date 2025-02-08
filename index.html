@@ -5,40 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Eyes</title>
     <link rel="stylesheet" href="style.css">
-
-    <!-- Firebase SDK -->
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>Global Eyes</h1>
-        <p>Website ini mendukung kebebasan bicara dalam mengkritik politik.</p>
-
-        <!-- Kotak Pencarian -->
-        <div class="search-container">
-            <input type="text" id="search" placeholder="Cari postingan...">
-            <button onclick="searchPosts()">Cari</button>
-        </div>
-
-        <!-- Kotak Postingan Baru -->
-        <div class="post-container">
-            <textarea id="newPost" placeholder="Tulis sesuatu..."></textarea>
-            <button onclick="addPost()">Post</button>
-        </div>
-
-        <!-- Area untuk Postingan -->
-        <div id="posts"></div>
-
-        <!-- Area untuk Komentar -->
-        <div class="comment-section">
-            <h2>Komentar</h2>
-            <input type="text" id="comment-input" placeholder="Tambahkan komentar...">
-            <button id="send-comment">Kirim</button>
-            <div id="comment-list"></div>
-        </div>
-    </div>
-
+        <input type="text" id="search" placeholder="Cari postingan...">
+    </header>
+    
+    <section id="description">
+        <p>Website ini mendukung kebebasan bicara dalam mengkritik politik dan beberapa kebebasan berbicara dengan anonymous. Anda bisa membangkitkan lagi kasus-kasus yang sengaja dipendam oleh pemerintah.</p>
+        <p class="powered">Powered by ZeRotrus/RtR0 and Afifcom32</p>
+    </section>
+    
+    <section id="upload">
+        <textarea id="postContent" placeholder="Tulis sesuatu..."></textarea>
+        <button onclick="uploadPost()">Upload</button>
+    </section>
+    
+    <section id="posts"></section>
+    
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
