@@ -5,24 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Eyes</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>Global Eyes</h1>
-        <p>Website ini mendukung kebebasan bicara dalam mengkritik politik anda dapat memposting sebuah kritikan untuk pemerintah atou mengungkit hal yang di tutupi oleh pemerintah.</p>
-        
+        <p>Website ini mendukung kebebasan bicara dalam mengkritik politik.</p>
+
+        <!-- Kotak Pencarian -->
         <div class="search-container">
             <input type="text" id="search" placeholder="Cari postingan...">
             <button onclick="searchPosts()">Cari</button>
         </div>
-        
+
+        <!-- Kotak Postingan Baru -->
         <div class="post-container">
             <textarea id="newPost" placeholder="Tulis sesuatu..."></textarea>
             <button onclick="addPost()">Post</button>
         </div>
-        
+
+        <!-- Area untuk Postingan -->
         <div id="posts"></div>
+
+        <!-- Area untuk Komentar -->
+        <div class="comment-section">
+            <h2>Komentar</h2>
+            <input type="text" id="comment-input" placeholder="Tambahkan komentar...">
+            <button id="send-comment">Kirim</button>
+            <div id="comment-list"></div>
+        </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
