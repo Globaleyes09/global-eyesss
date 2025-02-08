@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Eyes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Global Eyes</h1>
+        <p>Website ini mendukung kebebasan bicara dalam mengkritik politik anda dapat memposting sebuah kritikan untuk pemerintah atou mengungkit hal yang di tutupi oleh pemerintah.</p>
+        
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Cari postingan...">
+            <button onclick="searchPosts()">Cari</button>
+        </div>
+        
+        <div class="post-container">
+            <textarea id="newPost" placeholder="Tulis sesuatu..."></textarea>
+            <button onclick="addPost()">Post</button>
+        </div>
+        
+        <div id="posts"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
