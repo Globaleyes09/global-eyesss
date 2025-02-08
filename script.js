@@ -42,8 +42,9 @@ async function loadPosts() {
     querySnapshot.forEach((doc) => {
         let post = doc.data();
         let postElement = document.createElement("div");
+        postElement.classList.add("post");
         postElement.innerHTML = `<p>${post.text}</p>
-                                 <button onclick="likePost('${doc.id}')">Like (${post.likes})</button>`;
+                                 <button class="like-button" onclick="likePost('${doc.id}')">Like (${post.likes})</button>`;
         postsContainer.appendChild(postElement);
     });
 }
@@ -84,8 +85,4 @@ async function fetchComments() {
         commentList += `<p>${doc.data().text}</p>`;
     });
     
-    document.getElementById("comment-section").innerHTML = commentList;
-}
-
-// Event Listener untuk Tombol Kirim Komentar
-document.getElementById("send-comment").addEventListener("click", addComment);
+    document.getElementById("
